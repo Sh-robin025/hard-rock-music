@@ -19,6 +19,7 @@ const displaySong = songs => {
         document.getElementById("result").innerText = `There are no result for : ${input}.`
     } else {
         songs.forEach(song => {
+            document.getElementById("poster").innerHTML = "";
             document.getElementById("result").innerText = `Search result for '${input}' :`
             const div = document.createElement("div");
             div.className = "single-result row align-items-center my-3 p-3";
@@ -70,5 +71,9 @@ const getLyric = (artist, title) => {
 
 const goBack = () => {
     document.getElementById("lyrics").innerHTML = "";
+    document.getElementById("content-area").style.display = "block";
+}
+
+const goHome = () => {
     document.getElementById("content-area").style.display = "block";
 }

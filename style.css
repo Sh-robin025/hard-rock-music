@@ -49,3 +49,20 @@ body{
     text-align: center;
     color: #28a745;
 }
+.top-poster{
+    margin: 10px auto;
+    height: 400px;
+    width: 49%;
+}
+.middle-poster{
+    height: 250px;
+    width: 33%;
+    margin: 5px auto;
+}
+#poster h5{
+    margin: 30px auto;
+    display: inline;
+}
+#poster h5 i{
+    margin: 3px;
+}

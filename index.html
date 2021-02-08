@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- Custom css -->
@@ -18,7 +21,7 @@
     <div class="container">
         <nav class="navbar navbar-dark my-3">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="Hard Rock Solution">
+                <img onclick="goHome()" src="images/logo.png" alt="Hard Rock Solution">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
                 aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +48,7 @@
         </nav>
         <!-- Single Lyrics -->
         <div id="lyrics" class="single-lyrics text-center">
-                
+
         </div>
 
         <main id="content-area">
@@ -58,6 +61,18 @@
             </div>
             <h6 id="error"></h6>
             <h4 id="result"></h4>
+            <div id="poster" class="row mt-5">
+                <img class="top-poster" src="/images/poster.png" alt="">
+                <img class="top-poster" src="/images/poster1.png" alt="">
+                <img class="middle-poster" src="/images/poster2.png" alt="">
+                <img class="middle-poster" src="/images/poster3.png" alt="">
+                <img class="middle-poster" src="/images/poster4" alt="">
+                <h5>Connect us with :
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                </h5>
+            </div>
             <div id="song-container" class="search-result col-md-8 mx-auto py-4">
 
             </div>
