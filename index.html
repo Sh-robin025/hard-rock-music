@@ -9,8 +9,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- font awesome link -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- Custom css -->
@@ -23,8 +22,7 @@
             <a class="navbar-brand">
                 <img onclick="goHome()" src="images/logo.png" alt="Hard Rock Solution">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="images/toggler-icon.svg" alt="">
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -36,8 +34,7 @@
                         <a class="nav-link active" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Action 1</a>
                             <a class="dropdown-item" href="#">Action 2</a>
@@ -48,44 +45,50 @@
         </nav>
         <!-- Single Lyrics -->
         <div id="lyrics" class="single-lyrics text-center">
-
         </div>
 
         <main id="content-area">
             <div class="search-bar col-md-6 mx-auto">
                 <h1 class="text-center">Hard Rock Lyric Search</h1>
                 <div class="search-box my-5">
-                    <input id="input" type="text" class="form-control" placeholder="Enter your artist song name"/>
+                    <input id="input" type="text" class="form-control" placeholder="Enter your artist song name" />
                     <button onclick="getSongs()" class="btn btn-success search-btn">Search</button>
                 </div>
+                <!-- spinner -->
+                <div class="text-center">
+                    <button class="btn btn-success" type=" button " disabled>
+                        <span class="spinner-border spinner-border-sm " role="status " aria-hidden="true "></span>
+                        Loading...
+                      </button>
+                </div>
             </div>
-            <h6 id="error"></h6>
-            <h4 id="result"></h4>
-            <div id="poster" class="row mt-5">
-                <img class="top-poster" src="/images/poster.png" alt="">
-                <img class="top-poster" src="/images/poster1.png" alt="">
-                <img class="middle-poster" src="/images/poster2.png" alt="">
-                <img class="middle-poster" src="/images/poster3.png" alt="">
-                <img class="middle-poster" src="/images/poster4.png" alt="">
+            <h6 id="error "></h6>
+            <h4 id="result "></h4>
+            <div id="poster " class="row mt-5 ">
+                <img class="top-poster " src="/images/poster.png " alt=" ">
+                <img class="top-poster " src="/images/poster1.png " alt=" ">
+                <img class="middle-poster " src="/images/poster2.png " alt=" ">
+                <img class="middle-poster " src="/images/poster3.png " alt=" ">
+                <img class="middle-poster " src="/images/poster4.png " alt=" ">
                 <h5>Connect us with :
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook "></i>
+                    <i class="fab fa-linkedin "></i>
+                    <i class="fab fa-twitter "></i>
                 </h5>
             </div>
-            <div id="song-container" class="search-result col-md-8 mx-auto py-4">
+            <div id="song-container " class="search-result col-md-8 mx-auto py-4 ">
 
             </div>
         </main>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "></script>
 
     <!-- Custom Script Here -->
-    <script src="script.js"></script>
+    <script src="script.js "></script>
 </body>
 
 </html>

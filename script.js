@@ -4,14 +4,14 @@ const getSongs = () => {
     console.log(input);
     fetch(` https://api.lyrics.ovh/suggest/${input}`)
         .then(res => res.json())
-        .then(data => displaySong(data.data,input))
+        .then(data => displaySong(data.data, input))
         .catch(err => errMessage(err))
 }
 const errMessage = () => {
     document.getElementById("result").innerText = "";
     document.getElementById("error").innerText = "* input required .";
 }
-const displaySong = (songs,input) => {
+const displaySong = (songs, input) => {
     document.getElementById("error").innerText = "";
     const songContainer = document.getElementById("song-container");
     songContainer.innerHTML = '';
